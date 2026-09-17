@@ -361,3 +361,11 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+# Extra excludes for your workflow
+*.exe
+*.dll
+*.pdb
+TestResults/
+.idea/          # if you ever open the same repo in Rider/VS Code with JetBrains plugins
+*.DS_Store      # if you ever touch this repo from a Mac
+Thumbs.db       # Windows folder thumbnails
