@@ -21,6 +21,20 @@ namespace _2.underlying_values
             Medium = 2,
             High = 3
         }
+        //what is i give one of the enum value like 111, the next value will be 112, and so on. If you give a value that is not in the enum, it will still compile, but it will not be valid.
+        enum Status2
+        {
+            Pending = 111,
+            Approved, // 112
+            Rejected // 113
+        }
+        //what if one enum is given a -ve value, the next value will be -1, and so on. If you give a value that is not in the enum, it will still compile, but it will not be valid.
+        enum Status3
+        {
+            Pending = -1,
+            Approved, // 0
+            Rejected // 1
+        }
 
         static void Main(string[] args)
         {
@@ -37,6 +51,16 @@ namespace _2.underlying_values
             Console.WriteLine((byte)Level.Medium); // Output: 2
             Level l = (Level)3;
             Console.WriteLine(l);   // High
+
+            //one enum value is given and next values are automatically assigned
+            
+            Console.WriteLine((int)Status2.Rejected); // Output: 113
+
+            //-ve value is given and next values are automatically assigned
+
+            Console.WriteLine((int)Status3.Pending); // Output: -1
+            Console.WriteLine((int)Status3.Approved); // Output: 0
+            Console.WriteLine((int)Status3.Rejected); // Output: 1
         }
     }
 }
