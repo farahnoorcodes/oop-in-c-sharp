@@ -33,12 +33,12 @@ namespace cards_game
                 
                     if (p1.getfacecardcount() > p2.getfacecardcount())
                     {
-                        // TODO: print that Player 1 wins
-                    }
+                        Console.WriteLine(p1.name + " wins");
+                }
                     else if (p2.getfacecardcount() > p1.getfacecardcount())
                     {
-                        // TODO: print that Player 2 wins
-                    }
+                        Console.WriteLine(p2.name + " wins");
+                }
                     else
                     {
                          if(p1.getfacecardsum() > p2.getfacecardsum())

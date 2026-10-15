@@ -33,7 +33,7 @@ namespace cards_game
             {
                 card top = cards[0];
                 cards.RemoveAt(0);
-                Console.WriteLine($"Dealt Card: {top.suit} {top.value}");
+                Console.WriteLine($"Dealt Card: {top.suit} {top.value}");   
                 return top;
                 
             }
