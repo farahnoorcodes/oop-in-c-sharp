@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Reversing_words_of_a_string
 {
@@ -14,7 +10,7 @@ namespace Reversing_words_of_a_string
             start:
             try
             {
-                Console.WriteLine("Enter a string: ");
+                Console.Write("Enter a string: ");
                 user_input = Console.ReadLine();
             }
             catch (Exception)
